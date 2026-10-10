@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Smooth scrolling for in-page anchors */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Brand text selection */
+::selection {
+  background-color: #c59d5f;
+  color: #fff;
+}
+
+/* Slim, branded scrollbar (WebKit) */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #faf9f7;
+}
+::-webkit-scrollbar-thumb {
+  background: #d6cfc4;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c59d5f;
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .animate-marquee,
+  .animate-ken-burns {
+    animation: none !important;
+  }
+}

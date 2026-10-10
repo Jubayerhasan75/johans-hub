@@ -1,0 +1,43 @@
+# ───────────────────────────────
+#  Dependencies
+# ───────────────────────────────
+node_modules/
+.pnp
+.pnp.js
+
+# ───────────────────────────────
+#  Environment / secrets  (NEVER commit these)
+# ───────────────────────────────
+.env
+.env.*
+!.env.example
+*.pem
+
+# ───────────────────────────────
+#  Build output
+# ───────────────────────────────
+dist/
+build/
+.vite/
+*.tsbuildinfo
+
+# ───────────────────────────────
+#  Logs & debug
+# ───────────────────────────────
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ───────────────────────────────
+#  Editor / OS
+# ───────────────────────────────
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+
+# local push helper (not part of the repo)
+/push.bat
